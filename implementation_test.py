@@ -1,6 +1,6 @@
 import conversions
 import binary_operands
-from tabula_recta import tablula_recta
+from tr_table import tablula_recta
 from create_key import key as key_bulk
 
 
