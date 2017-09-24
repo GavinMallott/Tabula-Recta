@@ -1,4 +1,4 @@
-from tabula_recta import tabula_recta, query
+from tr_table import tabula_recta, query
 from create_key import key as key_text
 from create_key import stripper
 import conversions
