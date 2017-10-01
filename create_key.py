@@ -1,5 +1,11 @@
 import re
 
+
+def write_key_file(x):
+    key_file = open("key.txt", 'w+')
+    key_file.write(x)
+    key_file.close()
+
 def read_key_file():
     key_file = open("key.txt", 'r+')
     key_text = key_file.read()
