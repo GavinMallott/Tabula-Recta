@@ -1,3 +1,14 @@
+"""
+Tabula Recta
+--Tabula Recta Table--
+
+Author: Gavin Mallott
+Created: July 20, 2017
+Lasted Edited: October 24, 2017
+Last Edit: Adding docstrings/annotations
+"""
+
+
 import conversions
 
 
@@ -32,6 +43,8 @@ tabula_recta = [
 
 
 def query(plaintext, key):
+    """Reads Tabula Recta and returns queryed value based on a given plaintext and key"""
+
     x = int(conversions.ascii_to_decimal(key)) - 65
     y = int(conversions.ascii_to_decimal(plaintext)) - 65
     l = tabula_recta[x][y]

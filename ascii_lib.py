@@ -1,4 +1,17 @@
+"""
+Binary Conversions
+--Asciii Library--
+
+Author: Gavin Mallott
+Created: November 16, 2016
+Lasted Edited: October 24, 2017
+Last Edit: Adding docstrings/annotations
+"""
+
+
 def interpret_hex_to_acii(hex):
+	"""Takes a given hexadecimal number and returns a matching ascii value"""
+
 	if hex == '30': return '0'
 	if hex == '31': return '1'
 	if hex == '32': return '2'
@@ -102,8 +115,9 @@ def interpret_hex_to_acii(hex):
 	if hex == '7E': return '~'
 
 
-
 def interpret_ascii_to_hex(ascii):
+	"""Takes a given ascii value and returns a matching hexadecimal number"""
+
 	if ascii == '0': return '30'
 	if ascii == '1': return '31'
 	if ascii == '2': return '32'
