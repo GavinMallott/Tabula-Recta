@@ -32,12 +32,12 @@ class PolyAlphabeticCipher(object):
 
         key_list = []
         if self.message == "":
-            for i in range(len(self.ciphertext)):
+            for x, i in enumerate(self.ciphertext):
                 key_list.append(self.key_init[i])
             self.key = ''.join(key_list)
 
         elif self.ciphertext == "":
-            for i in range(len(self.message)):
+            for x, i in enumerate(self.message):
                 key_list.append(self.key_init[i])
             self.key = ''.join(key_list)
         
