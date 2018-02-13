@@ -44,9 +44,7 @@ class PolyAlphabeticCipher(object):
 
     def encode(self):
         """Sets self.ciphertext by encrypting self.message using the Tabula Recta and self.key, and sets self.message to ''"""
-        ciphertext_list = []
-        for x, i in enumerate(self.message):
-            ciphertext_list.append(query(self.message[i], self.key[i]))
+        chiphertext_list = [query(self.message[i], self.key[i]) for x, i in enumerate(self.message)]
         self.ciphertext = ''.join(ciphertext_list)
         self.message = ""
 
